@@ -1,0 +1,32 @@
+$baseFontFamily: Quicksand;
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+
+$btnPrimaryBackground: green;
+/* this changes the button color */
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+/* Changing both of these to the same color gives a solid 
+navbar instead of a two-tone navbar */
+
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+/* this removes the shadow under the navbar */
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
